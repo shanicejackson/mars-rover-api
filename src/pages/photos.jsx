@@ -1,6 +1,13 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 
 function Photos() {
-    const 
+    return(
+        <div className="photos-page">
+            <h1>Photos Page</h1>
+            <p>This is the photos page.</p>
+        </div>
+    
+)
+
+}
+export default Photos;

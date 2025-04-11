@@ -1,6 +1,6 @@
 import React from 'react';
-import './styling/home.css';
-import './styling/button.css';
+import '../styling/home.css'; 
+import '../styling/button.css'; 
 
 function Home() {
   return (

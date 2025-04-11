@@ -1,0 +1,45 @@
+/* Styling for the navbar container */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px whitesmoke;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 5px 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #f4f4f4;
+    color: purple;
+  }

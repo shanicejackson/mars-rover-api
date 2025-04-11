@@ -1,17 +1,16 @@
 import React from 'react';
-import Home from './pages/home';
-import Navbar from './components/navbar';
-import Rover from './pages/rover';
-import Photos from './pages/photos';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './styling/App.css';
+import Home from './pages/home'; 
+import Navbar from './components/navbar';
+import Rover from './pages/rover'; 
+import Photos from './pages/photos'; 
+import './styling/App.css'; 
 
 function App() {
   return (
     <div>
-      <Home />
-      <Navbar />
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rover" element={<Rover />} />
