@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 
 function Photos() {
-    return(
-        <div className="photos-page">
-            <h1>Photos Page</h1>
-            <p>This is the photos page.</p>
-        </div>
-    
-)
-
+  return (
+    <div>
+      <h1>Mars Rover Photos</h1>
+      <p>This page will display photos taken by the Mars Rover.</p>
+    </div>
+  );
 }
+
 export default Photos;

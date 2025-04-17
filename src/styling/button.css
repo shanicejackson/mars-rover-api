@@ -117,7 +117,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margin */
-  background-color: #000; /* Optional: Add a background color */
+  height: 100vh; 
+  margin: 0; 
+
 }

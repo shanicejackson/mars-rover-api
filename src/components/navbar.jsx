@@ -5,6 +5,7 @@ import '../styling/navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <div className="nav-container">
       <ul className="nav-links">
         <li>
           <Link to="/">Home</Link>
@@ -16,6 +17,7 @@ const Navbar = () => {
           <Link to="/photos">Photos</Link>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }
