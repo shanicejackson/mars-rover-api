@@ -9,26 +9,27 @@ const MarsRover = () => {
 
   useEffect(() => {
     const fetchPhotos = async () => {
-      const API_KEY = process.env.REACT_APP_NASA_API_KEY; // Use environment variable for API key
-      const URL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${date}&api_key=${API_KEY}`;
+        const API_KEY = "FJKDWPvIXWuUOog4NnaoLR3RwvdCRGr9VUL0Cxcp"; 
+        const URL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${date}&api_key=${API_KEY}`;
 
-      try {
-        const response = await fetch(URL);
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
+        try {
+            const response = await fetch(URL);
+            if (!response.ok) {
+                throw new Error("Failed to fetch data");
+            }
+            const data = await response.json();
+            setPhotos(data.photos || []);
+            setLoading(false);
+        } catch (error) {
+            console.error("Error fetching Mars Rover photos:", error);
+            setError("Failed to fetch Mars Rover photos. Please try again later.");
+            setLoading(false);
         }
-        const data = await response.json();
-        setPhotos(data.photos || []);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching Mars Rover photos:", error);
-        setError("Failed to fetch Mars Rover photos. Please try again later.");
-        setLoading(false);
-      }
     };
 
+
     fetchPhotos();
-  }, [date]); // Add `date` to the dependency array
+  }, [date]); 
 
   if (loading) {
     return <div className="loading">Loading Mars Rover photos...</div>;
@@ -46,7 +47,7 @@ const MarsRover = () => {
           type="date"
           id="date"
           value={date}
-          onChange={(e) => setDate(e.target.value)} // Update the date state
+          onChange={(e) => setDate(e.target.value)} 
         />
       </div>
       {photos.length > 0 ? (
