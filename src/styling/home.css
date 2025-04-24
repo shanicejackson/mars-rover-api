@@ -1,4 +1,19 @@
+
 .button{
     font-size: xx-large;
     
 }
+
+.space-photo {
+  position: relative;
+  width: 100vh; 
+  height: 100vh;
+  background-image: url("https://ggba.swiss/app/uploads/2023/10/Compremium-NASA-2360x1622-1.jpeg");
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

@@ -11,7 +11,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className="space-photo">
       <button className="btn-76" onClick={handleClick}>
         <span className="top"></span>
         <span className="right"></span>
@@ -19,7 +19,7 @@ function Home() {
         <span className="left"></span>
         Welcome
       </button>
-    </div>
+      </div>
   );
 }
 

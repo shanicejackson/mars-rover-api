@@ -1,29 +1,78 @@
 .rover-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .photo-card {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    text-align: center;
-    background-color: white;
-  }
-  
-  .photo-card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .photo-card p {
-    font-size: 1em;
-    color: #333;
-    margin: 10px 0;
-  }
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input[type="date"],
+select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.loading, .error {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: crimson;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.photo-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+
+.date-picker {
+  margin-bottom: 20px;
+}
+
+.date-picker label {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.date-picker input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
